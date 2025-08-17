@@ -92,7 +92,6 @@ The platform uses the NFT contract deployed on Arbitrum Sepolia:
 ```solidity
 Contract Address: 0x27AfcC1b6C645acF64b67f19C98ed48641aC37A8
 Network: Arbitrum Sepolia (Chain ID: 421614)
-Start Block: 184343121
 ```
 
 
