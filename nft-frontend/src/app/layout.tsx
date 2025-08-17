@@ -36,7 +36,7 @@
 
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+// import { Inter } from "next/font/google"
 import { headers } from "next/headers"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
@@ -44,7 +44,7 @@ import ContextProvider from "../../context/index"
 import { Providers } from "./providers"
 import { Toaster } from "sonner"
 
-const inter = Inter({ subsets: ["latin"] })
+// const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "NFT Creator Platform",
@@ -58,7 +58,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="font-sans antialiased">
         <ContextProvider cookies={(await headers()).get('cookie')}>
           <Providers>
             <Navigation />
